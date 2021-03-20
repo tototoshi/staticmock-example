@@ -1,0 +1,12 @@
+{
+  "require-dev": {
+    "tototoshi/staticmock": "3.3.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {"Example\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": {"Example\\": "test/"}
+  }
+}
