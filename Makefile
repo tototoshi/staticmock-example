@@ -1,4 +1,6 @@
 pwd := $(shell pwd)
+image_name := staticmock-example
+container_name := staticmock-example
 
 .PHONY:\
 	ci \
@@ -6,12 +8,12 @@ pwd := $(shell pwd)
 	test
 
 shell:
-	docker build -t staticmock-example .
-	docker run -it --rm --name staticmock-example -v $(pwd):$(pwd) -w $(pwd) staticmock-example bash
+	docker build -t $(image_name) .
+	docker run -it --rm --name $(container_name) -v $(pwd):$(pwd) -w $(pwd) $(image_name) bash
 
 ci:
 	docker build -t staticmock-example .
-	docker run -it --rm --name staticmock-example -v $(pwd):$(pwd) -w $(pwd) staticmock-example \
+	docker run -it --rm -v $(pwd):$(pwd) -w $(pwd) $(image_name) \
 		bash -c 'composer install && make test'
 
 test:
