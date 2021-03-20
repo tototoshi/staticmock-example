@@ -13,7 +13,7 @@ shell:
 
 ci:
 	docker build -t staticmock-example .
-	docker run -it --rm -v $(pwd):$(pwd) -w $(pwd) $(image_name) \
+	docker run --rm -v $(pwd):$(pwd) -w $(pwd) $(image_name) \
 		bash -c 'composer install && make test'
 
 test:
