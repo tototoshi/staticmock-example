@@ -4,6 +4,6 @@
 
 ```
 $ make shell
-$ composer install
+$ ./composer install
 $ make test
 ```
