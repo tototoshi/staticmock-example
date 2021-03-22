@@ -1,6 +1,7 @@
 pwd := $(shell pwd)
 image_name := staticmock-example
 container_name := staticmock-example
+composer := ./composer
 
 .PHONY:\
 	ci \
@@ -14,7 +15,7 @@ shell:
 ci:
 	docker build -t staticmock-example .
 	docker run --rm -v $(pwd):$(pwd) -w $(pwd) $(image_name) \
-		bash -c 'composer install && make test'
+		bash -c '$(composer) install && make test'
 
 test:
-	./vendor/bin/phpunit test
+	$(composer) exec phpunit test
