@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eac2a0813ad12fef602b5a5ba8b54a09",
+    "content-hash": "79cf45d3ac1df79bbc748186aa5cc603",
     "packages": [],
     "packages-dev": [
         {
@@ -2042,16 +2042,16 @@
         },
         {
             "name": "tototoshi/staticmock",
-            "version": "3.3.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tototoshi/staticmock.git",
-                "reference": "7350bd74386e1f0e2a79d6a5f28563891657b402"
+                "reference": "1aa0c110410605464fc34e009dacba4418f55fdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tototoshi/staticmock/zipball/7350bd74386e1f0e2a79d6a5f28563891657b402",
-                "reference": "7350bd74386e1f0e2a79d6a5f28563891657b402",
+                "url": "https://api.github.com/repos/tototoshi/staticmock/zipball/1aa0c110410605464fc34e009dacba4418f55fdc",
+                "reference": "1aa0c110410605464fc34e009dacba4418f55fdc",
                 "shasum": ""
             },
             "require-dev": {
@@ -2076,9 +2076,9 @@
             "description": "A mockery-like DSL to replace static method in test.",
             "support": {
                 "issues": "https://github.com/tototoshi/staticmock/issues",
-                "source": "https://github.com/tototoshi/staticmock/tree/3.3.0"
+                "source": "https://github.com/tototoshi/staticmock/tree/4.0.0"
             },
-            "time": "2021-03-19T12:50:16+00:00"
+            "time": "2021-04-11T07:15:51+00:00"
         },
         {
             "name": "webmozart/assert",
